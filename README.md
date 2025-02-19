@@ -1,3 +1,4 @@
+# Переменные окружения
 SECRET_KEY=
 DEBUG=
 
@@ -15,3 +16,6 @@ POSTGRES_PASSWORD=
 POSTGRES_DB=
 POSTGRES_PORT=
 POSTGRES_HOST=
+
+# Запустить приложение
+docker-compose up -d --build

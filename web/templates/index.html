@@ -1,12 +1,98 @@
 {% load static %}
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Новости консорциума</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <script src="{% static 'js/index.js' %}"></script>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    
-    <img src="{% static 'img/cat.png' %}" height="100" width="200">
-</body>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <header></header>
+      </nav>
+
+      <section class="news_concept">
+        <div class="news_concept__container">
+          <div class="news_concept__header">
+            <h2>
+              Новости <br />
+              консорциума
+            </h2>
+          </div>
+
+          <div class="news_concept__content">
+            <div class="news_concept__item">
+              <span class="category">Авиация</span>
+              <p class="description">
+                Новые <br />
+                возможности
+              </p>
+              <time datetime="2025-01-30">30.01.2025</time>
+              <p class="text">
+                БРИКС объявил о создании нового финансового механизма для
+                поддержки зеленой экономики
+              </p>
+            </div>
+
+            <div class="news_concept__item special">
+              <span class="category">Авиация</span>
+              <p class="description">
+                Новые <br />
+                возможности
+              </p>
+              <time datetime="2025-01-30">30.01.2025</time>
+
+              <p class="text">
+                БРИКС объявил о создании нового финансового механизма для
+                поддержки зеленой экономики
+              </p>
+            </div>
+
+            <div class="news_concept__item">
+              <span class="category">Авиация</span>
+              <p class="description">
+                Новые <br />
+                возможности
+              </p>
+              <time datetime="2025-01-30">30.01.2025</time>
+              <p class="text">
+                БРИКС объявил о создании нового финансового механизма для
+                поддержки зеленой экономики
+              </p>
+            </div>
+
+            <div class="news_concept__item">
+              <span class="category">Авиация</span>
+              <p class="description">
+                Новые <br />
+                возможности
+              </p>
+              <time datetime="2025-01-30">30.01.2025</time>
+              <p class="text">
+                БРИКС объявил о создании нового финансового механизма для
+                поддержки зеленой экономики
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team_brics">
+        <div class="news_concept__container">
+          <div class="news_concept__header">
+            <h2>
+              Преимущества <br />
+              членов БРИКС
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+  </body>
 </html>

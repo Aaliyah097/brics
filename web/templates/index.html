@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>Новости консорциума</title>
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/marqueesStyle.css' %}" />
     <script src="{% static 'js/index.js' %}"></script>
   </head>
   <body>
@@ -38,16 +39,18 @@
 
             <div class="news_concept__item special">
               <span class="category">Авиация</span>
-              <p class="description">
-                Новые <br />
-                возможности
-              </p>
-              <time datetime="2025-01-30">30.01.2025</time>
+              <div class="news_concept__wrapper">
+                <p class="description-invert">
+                  Новые <br />
+                  возможности
+                </p>
+                <time datetime="2025-01-30">30.01.2025</time>
 
-              <p class="text">
-                БРИКС объявил о создании нового финансового механизма для
-                поддержки зеленой экономики
-              </p>
+                <p class="text-invert">
+                  БРИКС объявил о создании нового финансового механизма для
+                  поддержки зеленой экономики
+                </p>
+              </div>
             </div>
 
             <div class="news_concept__item">
@@ -80,19 +83,88 @@
       </section>
 
       <section class="team_brics">
-        <div class="news_concept__container">
-          <div class="news_concept__header">
+        <div class="team_brics__container">
+          <div class="team_brics__header">
             <h2>
               Преимущества <br />
               членов БРИКС
             </h2>
           </div>
+          <div class="team_brics__content">
+            <div class="team_brics__block1">
+              <div class="team_brics__finance_strange">
+                <p>Финансовые <br />преимущества</p>
+                <button class="button-circle">
+                  <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
+                </button>
+              </div>
+              <div class="team_brics__btn_group">
+                <button class="button button-black team_brics__btn">
+                  Вступить в МК БРИКС
+                </button>
+                <button class="button team_brics__btn">
+                  Получение клубной карты
+                </button>
+              </div>
+            </div>
+            <div class="team_brics__block2">
+              <div class="team_brics__finance_strange">
+                <p>
+                  Нефинансовые <br />
+                  преимущества
+                </p>
+                <button class="button-circle">
+                  <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
+
+      <section class="partners_brics">
+        {% include "components/marquees.html" %}
+      </section>
+      <section class="team_brics">
+        <div class="team_brics__container">
+          <div class="team_brics__header">
+            <h2>
+              Преимущества <br />
+              членов БРИКС
+            </h2>
+          </div>
+          <div class="team_brics__content">
+            <div class="team_brics__block1">
+              <div class="team_brics__finance_strange">
+                <p>Финансовые <br />преимущества</p>
+                <button class="button-circle">
+                  <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
+                </button>
+              </div>
+              <div class="team_brics__btn_group">
+                <button class="button button-black team_brics__btn">
+                  Вступить в МК БРИКС
+                </button>
+                <button class="button team_brics__btn">
+                  Получение клубной карты
+                </button>
+              </div>
+            </div>
+            <div class="team_brics__block2">
+              <div class="team_brics__finance_strange">
+                <p>
+                  Нефинансовые <br />
+                  преимущества
+                </p>
+                <button class="button-circle">
+                  <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   </body>
 </html>

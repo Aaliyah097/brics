@@ -16,6 +16,10 @@
 
       <section class="news_concept">
         <div class="news_concept__container">
+          <div class="news_concept__plus"></div>
+          <div class="news_concept__plus"></div>
+          <div class="news_concept__plus"></div>
+          <div class="news_concept__plus"></div>
           <div class="news_concept__header">
             <h2>
               Новости <br />
@@ -84,6 +88,10 @@
 
       <section class="team_brics">
         <div class="team_brics__container">
+          <div class="team_brics__plus"></div>
+          <div class="team_brics__plus"></div>
+          <div class="team_brics__plus"></div>
+          <div class="team_brics__plus"></div>
           <div class="team_brics__header">
             <h2>
               Преимущества <br />
@@ -125,46 +133,121 @@
       <section class="partners_brics">
         {% include "components/marquees.html" %}
       </section>
-      <section class="team_brics">
-        <div class="team_brics__container">
-          <div class="team_brics__header">
+
+      <section class="consortium_partners">
+        <div class="consortium_partners__container">
+          <div class="consortium_partners__plus"></div>
+          <div class="consortium_partners__plus"></div>
+          <div class="consortium_partners__plus"></div>
+          <div class="consortium_partners__plus2"></div>
+          <div class="consortium_partners__header">
             <h2>
               Преимущества <br />
-              членов БРИКС
+              консорциума
             </h2>
           </div>
-          <div class="team_brics__content">
-            <div class="team_brics__block1">
-              <div class="team_brics__finance_strange">
-                <p>Финансовые <br />преимущества</p>
-                <button class="button-circle">
-                  <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
-                </button>
-              </div>
-              <div class="team_brics__btn_group">
-                <button class="button button-black team_brics__btn">
-                  Вступить в МК БРИКС
-                </button>
-                <button class="button team_brics__btn">
-                  Получение клубной карты
-                </button>
-              </div>
+          <div class="consortium_partners__content">
+            <div class="consortium_partners__content_line1">
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
             </div>
-            <div class="team_brics__block2">
-              <div class="team_brics__finance_strange">
-                <p>
-                  Нефинансовые <br />
-                  преимущества
-                </p>
-                <button class="button-circle">
-                  <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
-                </button>
-              </div>
+
+            <div class="consortium_partners__content_line2">
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+            </div>
+
+            <div class="consortium_partners__content_line3">
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
+              <div class="consortium_partners__item">Лого</div>
             </div>
           </div>
         </div>
       </section>
 
+      <section class="partner-section-wrapper">
+        <div class="partner-section">
+          <div class="ellipse ellipse-left"></div>
+          <div class="ellipse ellipse-top"></div>
+          <div class="ellipse ellipse-right"></div>
+
+          <div class="partner-container">
+            <h2>Стать партнером БРИКС</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nisi ut ut lorem sed. Sed
+              odio lorem pellentesque posuere euismod eget.
+            </p>
+            <form class="partner-form">
+              <label for="name">
+                Имя
+                <input type="text" id="name" required />
+              </label>
+              <label for="tel">
+                Номер телефона
+                <input type="tel" id="tel" required />
+              </label>
+              <label for="email">
+                Почта
+                <input type="text" id="email" required />
+              </label>
+              <button type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <footer class="footer">
+          <div class="footer_logo">
+            <img src="{% static 'assets/logo.png' %}" alt="" />
+          </div>
+          <div class="footer_menu">
+            <p>Меню</p>
+            <div class="footer_menu__content">
+              <a href="">О нас</a>
+              <a href="">Кластеры</a>
+              <a href="">Проекты</a>
+              <a href="">Медиа и новости</a>
+              <a href="">Бизнес хаб МКБ</a>
+            </div>
+          </div>
+          <div class="footer_section">
+            <p>Раздел</p>
+            <div class="footer_section__content">
+              <a href="">Страница</a>
+              <a href="">Страница</a>
+              <a href="">Страница</a>
+              <a href="">Страница</a>
+              <a href="">Страница</a>
+              <a href="">Страница</a>
+              <a href="">Страница</a>
+              <a href="">Страница</a>
+              <a href="">Страница</a>
+
+            </div>
+          </div>
+          <div class="footer_contacts">
+            <p>Контакты</p>
+            <div class="footer_contacts__content">
+              <a href="">О нас</a>
+              <a href="">Кластеры</a>
+              <a href="">Проекты</a>
+              <a href="">Медиа и новости</a>
+              <a href="">Бизнес хаб МКБ</a>
+            </div>
+          </div>
+        </footer>
+      </section>
     </main>
   </body>
 </html>

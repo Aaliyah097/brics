@@ -1,7 +1,7 @@
 .home-logo-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap:4vh;
     overflow: hidden;
     position: relative;
     width: 100%;

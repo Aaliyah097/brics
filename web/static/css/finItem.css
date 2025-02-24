@@ -1,0 +1,32 @@
+.container-finance {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin-top: 5vh;
+}
+.container-finance:nth-child(2){
+    margin-left: 40;
+}
+.container-finance__item {
+  background-color: rgba(145, 145, 145, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.container-finance__text {
+  font-size: 0.9em;
+  width: 70%;
+}
+
+.container-finance__number {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

@@ -132,11 +132,13 @@ body {
 
 section {
   scroll-snap-align: start;
-  height: 100vh;
+  /* height: 100vh;  */
   max-height: auto;
   display: flex;
   flex-direction: column;
 }
+
+
 
 .button {
   border-radius: 50px;
@@ -170,8 +172,9 @@ section {
   filter: invert(0%) brightness(0%);
 }
 
-.button-circle:hover {
+.team_brics__finance_strange:hover .button-circle {
   transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
 }
 
 .button-circle svg {
@@ -371,6 +374,12 @@ section {
   height: 100vh;
   position: relative;
 }
+
+.team_brics__container {
+
+  height: auto !important;
+}
+
 .team_brics__header h2,
 .consortium_partners__header h2 {
   color: var(--main-color-black);
@@ -397,6 +406,8 @@ section {
   justify-content: space-between;
   align-items: flex-end;
   border-radius: 10px;
+  cursor: pointer;
+
 }
 .team_brics__finance_strange:first-child {
   background-image: url("../assets/ellipse_blue.png");
@@ -581,17 +592,17 @@ section {
 }
 
 .footer {
-  position: relative; 
+  position: relative;
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  padding: 8% 0; 
+  padding: 8% 0;
   display: flex;
+  height: 100vh;
 }
-.footer_menu{
+.footer_menu {
   margin-left: calc(20vw - 155px);
 }
-
 
 .footer_menu,
 .footer_section,
@@ -604,12 +615,11 @@ section {
 
 .footer_menu p,
 .footer_section p,
-.footer_contacts p{
+.footer_contacts p {
   text-transform: uppercase;
   font-size: 1rem;
+  letter-spacing: 3.25px;
 }
-
-
 
 .footer_menu__content,
 .footer_section__content,
@@ -619,11 +629,57 @@ section {
   flex-direction: column;
   gap: 2vh;
   width: 20vw;
-} 
+}
 
 .footer_menu__content a,
 .footer_section__content a,
 .footer_contacts__content a {
   color: var(--main-color-white);
   text-decoration: none;
-} 
+  font-size: 0.95rem;
+}
+
+.footer_contacts__content p {
+  color: #878787;
+  text-transform: uppercase;
+  letter-spacing: 3.25px;
+}
+
+.footer_contacts__input_block {
+  margin-top: 10%;
+}
+
+.footer_contacts__input_block label {
+  letter-spacing: 3.25px;
+  font-weight: lighter;
+}
+
+.subscribe-label {
+  display: inline-block;
+  font-size: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+
+.subscribe-wrapper {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+
+.subscribe-input {
+  padding: 4%; 
+  margin-top: 4%;
+  border: 1px solid #000;
+  border-radius: 50px;
+  background-color: #fff;     
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.subscribe-input:focus {
+  border-color: #666;
+}
+

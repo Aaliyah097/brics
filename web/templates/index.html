@@ -6,6 +6,9 @@
     <title>Новости консорциума</title>
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <link rel="stylesheet" href="{% static 'css/marqueesStyle.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/finItem.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+
     <script src="{% static 'js/index.js' %}"></script>
   </head>
   <body>
@@ -99,22 +102,27 @@
             </h2>
           </div>
           <div class="team_brics__content">
-            <div class="team_brics__block1">
-              <div class="team_brics__finance_strange">
-                <p>Финансовые <br />преимущества</p>
-                <button class="button-circle">
-                  <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
-                </button>
+            <div class="team_brics__column">
+              <div class="team_brics__block1">
+                <div class="team_brics__finance_strange">
+                  <p>Финансовые <br />преимущества</p>
+                  <button class="button-circle">
+                    <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
+                  </button>
+                </div>
+                <div class="team_brics__btn_group">
+                  <button class="button button-black team_brics__btn">
+                    Вступить в МК БРИКС
+                  </button>
+                  <button class="button team_brics__btn">
+                    Получение клубной карты
+                  </button>
+                </div>
               </div>
-              <div class="team_brics__btn_group">
-                <button class="button button-black team_brics__btn">
-                  Вступить в МК БРИКС
-                </button>
-                <button class="button team_brics__btn">
-                  Получение клубной карты
-                </button>
-              </div>
+              {% include "components/fin-item.html" %}
+
             </div>
+            <div class="team_brics__column">
             <div class="team_brics__block2">
               <div class="team_brics__finance_strange">
                 <p>
@@ -126,6 +134,8 @@
                 </button>
               </div>
             </div>
+            {% include "components/notfin-item.html" %}
+          </div>
           </div>
         </div>
       </section>
@@ -239,11 +249,25 @@
           <div class="footer_contacts">
             <p>Контакты</p>
             <div class="footer_contacts__content">
-              <a href="">О нас</a>
-              <a href="">Кластеры</a>
-              <a href="">Проекты</a>
-              <a href="">Медиа и новости</a>
-              <a href="">Бизнес хаб МКБ</a>
+              <p>ТЕЛЕФОН</p>
+              <a href="" type="tel">+7 (999) 999-99-99</a><a href="">
+                <p>EMAIL</p>
+              <a href="">mail@nail.com</a>
+              <p>Адрес</p>
+              <a href="">г. Москва, ул.Улица, 17</a>
+
+              <div class="footer_contacts__input_block">
+                <label class="subscribe-label">
+                  Подпишитесь на новости<br>
+                  <div class="subscribe-wrapper">
+                    <input
+                      type="email"
+                      placeholder="Введите свою почту"
+                      class="subscribe-input"
+                    />
+                  </div>
+                </label>
+              </div>
             </div>
           </div>
         </footer>

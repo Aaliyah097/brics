@@ -1,0 +1,11 @@
+.container-finance {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .team_brics__column.open .container-finance {
+    max-height: 1000px; 
+    opacity: 1;
+  }

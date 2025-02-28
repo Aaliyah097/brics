@@ -583,6 +583,16 @@ section {
   font-size: 0.95rem;
 }
 
+.footer_menu__content{
+  height: 80%;
+}
+.footer_menu__content .social_network{
+  display: flex;
+  justify-content: flex-start;
+  gap: 2%;
+  margin-top: auto;
+}
+
 .footer_contacts__content p {
   color: #878787;
   text-transform: uppercase;

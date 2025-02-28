@@ -1,0 +1,115 @@
+.main-page {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh !important;
+  background-color: var(--main-color-black);
+  background-image: url("../assets/blue_transparent.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+.main-page > nav > header {
+  width: 88%;
+  height: auto;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-page__content {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: auto;
+}
+
+.main-page__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2rem;
+  color: var(--main-color-white);
+  font-size: clamp(2px, 0.85rem, 1.2rem);
+}
+
+.main-page__list > li {
+  cursor: pointer;
+  text-align: center;
+}
+
+.main-page__btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-page__btn-group__left,
+.main-page__btn-group__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px !important;
+}
+
+.main-page__btn-group__left > button.fill-blue {
+  background-color: var(--main-color-blue) !important;
+  color: var(--main-color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  min-width: 13vw;
+  font-size: clamp(2px, 0.9rem, 1rem);
+  text-wrap: nowrap;
+}
+
+.main-page__btn-group__left > button.fill-transparent {
+  background-color: transparent;
+  color: var(--main-color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  min-width: 13vw;
+  border: 1px solid var(--main-color-white);
+  font-size: clamp(2px, 0.9rem, 1rem);
+}
+
+.main-page__btn-group__right > .fill-white {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--main-color-white);
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+}
+.main-page__btn-group__right > .fill-white img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.main-page > .main-page__map img {
+  width: 70%;
+  height: auto;
+}
+
+.main-page__map > .main-page__image {
+  display: block;
+  margin: 2% auto 0;
+}
+
+.main-page__footer > .main-page__btn_down {
+  display: block;
+  margin: 2% auto;
+  width: 4vw;
+}
+
+.main-page__logo {
+  width: 7vw;
+}

@@ -14,6 +14,8 @@
   --main-grey-article: #9f9f9f;
   --main-dark-grey: #141414;
 
+  --main-color-blue: rgba(49, 107, 255, 1);
+
   --main-color-black: #000000;
 
   --border-radius-20: 20px;
@@ -24,59 +26,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 9999;
-  background-image:
-      /* Полоска на 10% */ linear-gradient(
-      to right,
-      transparent 10%,
-      var(--main-grey-color-opacity-20) 10%,
-      var(--main-grey-color-opacity-20) calc(10% + 1px),
-      transparent calc(10% + 1px)
-    ),
-    /* Полоска на 30% */
-      linear-gradient(
-        to right,
-        transparent 30%,
-        var(--main-grey-color-opacity-20) 30%,
-        var(--main-grey-color-opacity-20) calc(30% + 1px),
-        transparent calc(30% + 1px)
-      ),
-    /* Полоска на 50% */
-      linear-gradient(
-        to right,
-        transparent 50%,
-        var(--main-grey-color-opacity-20) 50%,
-        var(--main-grey-color-opacity-20) calc(50% + 1px),
-        transparent calc(50% + 1px)
-      ),
-    /* Полоска на 70% */
-      linear-gradient(
-        to right,
-        transparent 70%,
-        var(--main-grey-color-opacity-20) 70%,
-        var(--main-grey-color-opacity-20) calc(70% + 1px),
-        transparent calc(70% + 1px)
-      ),
-    /* Полоска на 90% */
-      linear-gradient(
-        to right,
-        transparent 90%,
-        var(--main-grey-color-opacity-20) 90%,
-        var(--main-grey-color-opacity-20) calc(90% + 1px),
-        transparent calc(90% + 1px)
-      );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  mix-blend-mode: multiply;
-}
+
 
 body {
   margin: 0;

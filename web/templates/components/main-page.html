@@ -1,0 +1,68 @@
+{% load static %}
+<section class="main-page">
+  <nav>
+    <header>
+      <img
+        src="{% static 'assets/logo.png' %}"
+        class="main-page__logo"
+        alt="Logo"
+      />
+
+      <div class="main-page__content">
+        <ul class="main-page__list">
+          <li>Структура консорциума</li>
+          <li>Бизнес Хаб</li>
+          <li>Аппарат эффективного управления</li>
+          <li>Аппарат финансирования и инвестиций</li>
+        </ul>
+
+        <ul class="main-page__list">
+          <li>Аппарат торговых операций и логистики</li>
+          <li>Департамент культуры</li>
+          <li>Благотворительный фонд</li>
+          <li>Центры</li>
+          <li>Новости</li>
+          <li>Мероприятия</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+
+      <div class="main-page__btn-group">
+        <!-- Кнопки слева -->
+        <div class="main-page__btn-group__left">
+          <button class="button fill-blue">Вступить в консорциум</button>
+          <button class="button fill-transparent">Стать партнером</button>
+        </div>
+        <!-- Кнопки справа -->
+        <div class="main-page__btn-group__right">
+          <button class="fill-white">
+            <img src="{% static 'assets/search.png' %}" alt="" />
+          </button>
+          <button class="fill-white">
+            <img src="{% static 'assets/planet_btn.png' %}" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="main-page__map"></div>
+      <div class="main-page__footer"></div>
+    </header>
+  </nav>
+
+  <div class="main-page__map">
+    <img
+      src="{% static 'assets/map.svg' %}"
+      alt="Map"
+      class="main-page__image"
+    />
+  </div>
+
+  <div class="main-page__footer">
+    <img
+      src="{% static 'assets/arrow_button_down.png' %}"
+      alt="arrow_button_down"
+      class="main-page__btn_down"
+      id="arrow_button_down"
+    />
+  </div>
+</section>

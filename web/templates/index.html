@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="{% static 'css/marqueesStyle.css' %}" />
     <link rel="stylesheet" href="{% static 'css/finItem.css' %}" />
     <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
-
+    <link rel="stylesheet" href="{% static 'css/mainPage.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">   
+   
     <script src="{% static 'js/index.js' %}"></script>
   </head>
   <body>
     <main>
-      <nav>
-        <header></header>
-      </nav>
-
+      <section class="main-page">
+      {% include "components/main-page.html" %}
+    </section>
+    
       <section class="news_concept">
         <div class="news_concept__container">
           <div class="news_concept__plus"></div>

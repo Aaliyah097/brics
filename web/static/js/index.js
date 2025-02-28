@@ -10,10 +10,18 @@ Http.onreadystatechange = (e) => {
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".team_brics__finance_strange");
   const downBtn = document.querySelector("#arrow_button_down");
+  const UpBtn = document.querySelector("#arrow_button_up");
   const newsBlock = document.querySelector(".news_concept");
+  const mainPage = document.querySelector(".main-page");
 
   downBtn.addEventListener("click", () => {
     newsBlock.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+
+  UpBtn.addEventListener("click", () => {
+    mainPage.scrollIntoView({
       behavior: "smooth",
     });
   });

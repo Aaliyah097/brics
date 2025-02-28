@@ -26,8 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 body {
   margin: 0;
   overflow-y: scroll;
@@ -87,8 +85,6 @@ section {
   display: flex;
   flex-direction: column;
 }
-
-
 
 .button {
   border-radius: 50px;
@@ -326,7 +322,6 @@ section {
 }
 
 .team_brics__container {
-
   height: auto !important;
 }
 
@@ -357,7 +352,6 @@ section {
   align-items: flex-end;
   border-radius: 10px;
   cursor: pointer;
-
 }
 .team_brics__finance_strange:first-child {
   background-image: url("../assets/ellipse_blue.png");
@@ -611,7 +605,6 @@ section {
   text-transform: uppercase;
 }
 
-
 .subscribe-wrapper {
   position: relative;
   display: inline-flex;
@@ -619,11 +612,11 @@ section {
 }
 
 .subscribe-input {
-  padding: 4%; 
+  padding: 4%;
   margin-top: 4%;
   border: 1px solid #000;
   border-radius: 50px;
-  background-color: #fff;     
+  background-color: #fff;
   font-size: 14px;
   outline: none;
   width: 100%;
@@ -633,3 +626,22 @@ section {
   border-color: #666;
 }
 
+.main-page__footer > .main-page__btn_down {
+  display: block;
+  margin: 2% auto;
+  width: 4vw;
+  cursor: pointer;
+}
+
+.footer-wrapper {
+  position: relative;
+}
+
+.footer-wrapper > .footer__btn_up {
+  width: 4vw !important;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 5vh;
+  right: 10vw;
+  cursor: pointer;
+}

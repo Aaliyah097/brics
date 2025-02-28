@@ -34,7 +34,7 @@
   list-style-type: none;
   gap: 2rem;
   color: var(--main-color-white);
-  font-size: clamp(2px, 0.85rem, 1.2rem);
+  font-size: clamp(0.7rem, 0.85rem, 1.2rem);
 }
 
 .main-page__list > li {
@@ -62,7 +62,7 @@
   border: none;
   padding: 0.5rem 1rem;
   min-width: 13vw;
-  font-size: clamp(2px, 0.9rem, 1rem);
+  font-size: clamp(0.7rem, 0.85rem, 1.2rem);
   text-wrap: nowrap;
 }
 
@@ -73,7 +73,7 @@
   padding: 0.5rem 1rem;
   min-width: 13vw;
   border: 1px solid var(--main-color-white);
-  font-size: clamp(2px, 0.9rem, 1rem);
+  font-size: clamp(0.7rem, 0.85rem, 1.2rem);
 }
 
 .main-page__btn-group__right > .fill-white {
@@ -89,14 +89,42 @@
   background: transparent;
 }
 .main-page__btn-group__right > .fill-white img {
-  width: 60%;
+  width: 1vw;
   height: auto;
   display: block;
 }
 
+.main-page__btn-group__right > .fill-white:nth-child(2) img {
+  width: 1.3vw;
+}
+
+.main-page__map {
+  position: relative;
+  text-align: center;
+  color: var(--main-color-white);
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.main-page__map > h1 {
+  font-size: 4.5rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.main-page__map > p {
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .main-page > .main-page__map img {
-  width: 70%;
+  width: 80%;
   height: auto;
+  
 }
 
 .main-page__map > .main-page__image {
@@ -108,8 +136,15 @@
   display: block;
   margin: 2% auto;
   width: 4vw;
+  cursor: pointer;
 }
 
 .main-page__logo {
   width: 7vw;
+}
+
+@media screen and (max-width: 1550px) {
+  .main-page > nav > header {
+    width: 95%;
+  }
 }

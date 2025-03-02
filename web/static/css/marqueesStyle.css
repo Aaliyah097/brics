@@ -5,8 +5,8 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    padding: 50px 0;
-    background-color: rgba(0,0,0,1);
+    padding: 25px 0;
+    background-color: var(--main-background-color);
   }
 
   .clients-grid {
@@ -19,7 +19,7 @@
 
   .cluster-button,
   .cluster-text {
-    padding: 12px 24px;
+    padding: 1vh 4vw;
     font-size: 16px;
     white-space: nowrap;
     flex-shrink: 0;

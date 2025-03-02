@@ -10,8 +10,15 @@
     <link rel="stylesheet" href="{% static 'css/finItem.css' %}" />
     <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
     <link rel="stylesheet" href="{% static 'css/mainPage.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/events.css' %}">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">   
-   
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="{% static 'js/index.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -22,7 +29,7 @@
       {% include "components/main-page.html" %}
     </section>
     
-      <section class="news_concept">
+      <section class="news_concept black-block">
         
         <div class="news_concept__container">
           <div class="news_concept__plus"></div>
@@ -95,7 +102,7 @@
         </div>
       </section>
 
-      <section class="team_brics">
+      <section class="team_brics white-block">
         <div class="team_brics__container">
           <div class="team_brics__plus"></div>
           <div class="team_brics__plus"></div>
@@ -146,11 +153,15 @@
         </div>
       </section>
 
-      <section class="partners_brics">
-        {% include "components/marquees.html" %}
+
+      <section class="events white-block">
+        <section class="partners_brics">
+          {% include "components/marquees.html" %}
+        </section>
+        {% include "components/events.html" %}
       </section>
 
-      <section class="consortium_partners">
+      <section class="consortium_partners white-block">
         <div class="consortium_partners__container">
           <div class="consortium_partners__plus"></div>
           <div class="consortium_partners__plus"></div>
@@ -191,7 +202,7 @@
         </div>
       </section>
 
-      <section class="partner-section-wrapper">
+      <section class="partner-section-wrapper white-block">
         <div class="partner-section">
           <div class="ellipse ellipse-left"></div>
           <div class="ellipse ellipse-top"></div>
@@ -222,7 +233,7 @@
         </div>
       </section>
 
-      <section class="footer-wrapper">
+      <section class="footer-wrapper black-block">
         <footer class="footer">
           <div class="footer_logo">
             <img src="{% static 'assets/logo.png' %}" alt="" />

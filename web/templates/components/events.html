@@ -1,0 +1,76 @@
+{% load static %}
+<style>
+  .events__item {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("{% static 'assets/conf.jpeg' %}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>
+<div class="events__container">
+  <div class="events__header">
+    <h2>Мероприятия</h2>
+  </div>
+  <div class="events__wrapper">
+    <div class="events__slider">
+      <div class="events__item">
+        <div class="events__first-line">
+          <div class="events__item__date">
+            <span class="events__item__date-year">2025</span>
+            <span class="events__item__date-day">00</span>
+            <span class="events__item__date-month">Месяц</span>
+          </div>
+          <div class="events__item__type">
+            <img src="{% static 'assets/line.svg' %}" alt="Линия" />
+            <span>конференция</span>
+          </div>
+        </div>
+        <div class="events__second-line">
+          <div class="events_item__description">
+            <h3>Название мероприятия</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="events__item">
+        <div class="events__first-line">
+          <div class="events__item__date">
+            <span class="events__item__date-year">2025</span>
+            <span class="events__item__date-day">00</span>
+            <span class="events__item__date-month">Месяц</span>
+          </div>
+          <div class="events__item__type">
+            <img src="{% static 'assets/line.svg' %}" alt="Линия" />
+            <span>конференция</span>
+          </div>
+        </div>
+        <div class="events__second-line">
+          <div class="events_item__description">
+            <h3>Название мероприятия</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="events__item">
+        <div class="events__first-line">
+          <div class="events__item__date">
+            <span class="events__item__date-year">2025</span>
+            <span class="events__item__date-day">00</span>
+            <span class="events__item__date-month">Месяц</span>
+          </div>
+          <div class="events__item__type">
+            <img src="{% static 'assets/line.svg' %}" alt="Линия" />
+            <span>конференция</span>
+          </div>
+        </div>
+        <div class="events__second-line">
+          <div class="events_item__description">
+            <h3>Название мероприятия</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

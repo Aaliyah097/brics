@@ -19,9 +19,6 @@
   --main-color-black: #000000;
 
   --border-radius-20: 20px;
-
-  --line-color-dark: rgba(255, 255, 255, 0.2);
-  --line-color-light: rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -36,9 +33,6 @@ body {
   min-height: 100vh;
 }
 
-.black-block {
-  background-color: var(--main-color-black);
-}
 
 .white-block {
   position: relative;
@@ -49,7 +43,7 @@ body {
 .black-block {
   position: relative;
   background-color: var(--main-background-color);
-  --line-color: rgba(255, 255, 255, 0.2);
+  --line-color: rgba(255, 255, 255, 0.1);
 }
 
 .white-block::before,

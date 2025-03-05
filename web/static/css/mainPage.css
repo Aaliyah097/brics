@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  gap: 1.5rem;
+  gap: 1rem;
   color: var(--main-color-white);
   font-size: clamp(0.7rem, 0.85rem, 1.2rem);
 }
@@ -40,6 +40,10 @@
 .main-page__list > li {
   cursor: pointer;
   text-align: center;
+}
+
+.main-page__list > li img {
+  width: 1vw;
 }
 
 .main-page__btn-group {
@@ -103,13 +107,13 @@
   text-align: center;
   color: var(--main-color-white);
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .main-page__map > h1 {
   font-size: 4.5rem;
   position: absolute;
-  top: 0;
+  top: -8%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -117,19 +121,18 @@
 
 .main-page__map > p {
   position: absolute;
-  top: 6rem;
+  top: 3rem;
   left: 50%;
   transform: translateX(-50%);
 }
 .main-page > .main-page__map img {
   width: 80%;
   height: auto;
-  
 }
 
 .main-page__map > .main-page__image {
   display: block;
-  margin: 2% auto 0;
+  margin: 10px auto 0;
 }
 
 .main-page__footer > .main-page__btn_down {
@@ -147,4 +150,87 @@
   .main-page > nav > header {
     width: 95%;
   }
+}
+
+.main-page__list li {
+  position: relative;
+}
+
+.submenu {
+  min-width: 20vw;
+  width: auto;
+  padding: 2% 10%;
+  background: var(--main-color-white);
+  position: absolute;
+  z-index: 100;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 16px;
+}
+
+.submenu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--main-color-white) transparent;
+}
+.submenu ul {
+  padding: 0;
+}
+
+.submenu ul > li {
+  color: var(--main-color-black);
+  list-style-type: none;
+  text-align: left;
+  font-weight: normal;
+  margin-top: 2%;
+  white-space: wrap;
+}
+.submenu ul > li > span {
+  color: #677489;
+  text-align: left;
+  font-weight: normal;
+}
+
+.has-submenu {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Изначальное состояние подменю: скрыто с помощью scaleY и прозрачности */
+.has-submenu .submenu {
+  position: absolute;
+  top: 150%; /* сразу под li */
+  left: 50%; /* начинаем от центра li */
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top center;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+
+  width: auto;
+  padding: 2vh 2vw;
+    background: var(--main-color-white);
+  z-index: 100;
+  border-radius: 16px;
+}
+
+
+/* Состояние открытого подменю */
+.has-submenu.open .submenu {
+  transform: translateX(-50%) scaleY(1);
+  opacity: 1;
+}
+
+/* Анимация поворота стрелки */
+.has-submenu > .chevron {
+  transition: transform 0.3s ease;
+}
+.has-submenu.open > .chevron {
+  transform: rotate(180deg);
 }

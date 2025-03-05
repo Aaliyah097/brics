@@ -26,6 +26,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  document.querySelectorAll(".has-submenu").forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      if (e.target.closest(".submenu")) return;
+
+      document
+        .querySelectorAll(".has-submenu.open")
+        .forEach(function (openItem) {
+          if (openItem !== item) {
+            openItem.classList.remove("open");
+          }
+        });
+
+      item.classList.toggle("open");
+
+      e.stopPropagation();
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".has-submenu")) {
+      document
+        .querySelectorAll(".has-submenu.open")
+        .forEach(function (openItem) {
+          openItem.classList.remove("open");
+        });
+    }
+  });
+
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
       const column = this.closest(".team_brics__column");
@@ -44,5 +72,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-

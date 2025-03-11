@@ -4,6 +4,7 @@ from rest_framework import status
 from drf_spectacular.utils import extend_schema
 from auth2.signup.serializers import SignupSerializer, SignupConfirmSerializer
 from users.is_email_free import is_email_free
+from users.free_email import free_email
 from users.create_new_user import create_new_user
 from auth2.nonce.create_nonce import create_nonce
 from auth2.signup.send_signup_email import send_signup_email
@@ -27,8 +28,16 @@ def signup(request):
             data='Почтовый адрес занят'
         )
     
-    send_signup_email(email, create_nonce(email))
-    
+    try:
+        send_signup_email(email, create_nonce(email))
+    except Exception as e:
+        free_email(email)
+        raise e
+        return Response(
+            status=status.HTTP_503_SERVICE_UNAVAILABLE,
+            data='Не удалось отправить письмо на почту'
+        )
+
     return Response(
         status=status.HTTP_200_OK,
         data="Письмо для завершения регистрации отправлено на почту"

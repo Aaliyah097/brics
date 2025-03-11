@@ -1,4 +1,4 @@
-from django.core.mail import send_mail
+from bricsid.send_email import send_mail
 from config import config
 
 

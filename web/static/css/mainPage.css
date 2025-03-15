@@ -146,12 +146,6 @@
   width: 7vw;
 }
 
-@media screen and (max-width: 1550px) {
-  .main-page > nav > header {
-    width: 95%;
-  }
-}
-
 .main-page__list li {
   position: relative;
 }
@@ -212,14 +206,12 @@
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
 
-
   width: auto;
   padding: 2vh 2vw;
-    background: var(--main-color-white);
+  background: var(--main-color-white);
   z-index: 100;
   border-radius: 16px;
 }
-
 
 /* Состояние открытого подменю */
 .has-submenu.open .submenu {
@@ -233,4 +225,82 @@
 }
 .has-submenu.open > .chevron {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1550px) {
+  .main-page > nav > header {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .main-page > nav > header:not(.mobile) {
+    display: none;
+  }
+
+  .main-page__logo_mobile:first-child {
+    width: 17vw;
+  }
+
+  .main-page__logo_mobile:last-child {
+    width: 14vw;
+  }
+
+  .main-page__map_mobile {
+    height: 80vh;
+    white-space: wrap;
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-color-white);
+    position: relative;
+
+    h1 {
+      font-size: 5vh !important;
+      width: 100%;
+      white-space: wrap;
+      text-align: center;
+    }
+
+    p {
+      font-size: 2vh;
+      margin-top: 12%;
+      text-align: center;
+      width: 70%;
+    }
+
+    .main-page__image_mobile {
+      display: block;
+      width: 100vw;
+      position: absolute;
+      bottom: 20%;
+    }
+  }
+
+  .main-page__footer_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+
+    .main-page__btn_down_mobile {
+      display: block;
+      width: 10vw;
+      cursor: pointer;
+    }
+  }
+
+  header.mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh !important;
+  }
 }

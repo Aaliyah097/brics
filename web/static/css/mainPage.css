@@ -10,6 +10,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
+
 .main-page > nav > header {
   width: 88%;
   height: auto;
@@ -17,6 +18,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header.mobile,
+.main-page__map_mobile,
+.main-page__footer_mobile {
+  display: none !important;
 }
 
 .main-page__content {
@@ -240,8 +247,21 @@
     justify-content: space-between;
     position: relative;
   }
-  .main-page > nav > header:not(.mobile) {
+
+  .main-page__map_mobile,
+  .main-page__footer_mobile {
+    display: block !important;
+  }
+
+  .main-page > nav > header:not(.mobile),
+  .main-page__map,
+  .main-page__footer {
     display: none;
+  }
+
+  header.mobile{
+    display: block !important;
+    display: flex !important;
   }
 
   .main-page__logo_mobile:first-child {
@@ -264,6 +284,7 @@
     position: relative;
 
     h1 {
+      margin-top: 6%;
       font-size: 5vh !important;
       width: 100%;
       white-space: wrap;
@@ -272,8 +293,8 @@
 
     p {
       font-size: 2vh;
-      margin-top: 12%;
-      text-align: center;
+      margin: 12% auto;
+      text-align: center !important;
       width: 70%;
     }
 
@@ -295,6 +316,7 @@
       display: block;
       width: 10vw;
       cursor: pointer;
+      margin: 0 auto;
     }
   }
 

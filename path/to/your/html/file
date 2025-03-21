@@ -1,0 +1,50 @@
+<!-- Подключение CSS Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Добавление HTML для мобильного слайдера (скрыт на десктопе) -->
+<div class="news_concept__swiper-container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Клонируем элементы из .news_concept__content -->
+      <!-- Здесь будут размещены элементы из новостного блока через JavaScript -->
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- Подключение JavaScript Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Инициализация Swiper -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Проверяем, является ли устройство мобильным
+    if (window.innerWidth <= 768) {
+      // Клонируем новостные элементы из основного контейнера в Swiper
+      const newsItems = document.querySelectorAll('.news_concept__item');
+      const swiperWrapper = document.querySelector('.swiper-wrapper');
+      
+      if (newsItems.length > 0 && swiperWrapper) {
+        newsItems.forEach(item => {
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          slide.appendChild(item.cloneNode(true));
+          swiperWrapper.appendChild(slide);
+        });
+        
+        // Инициализируем Swiper
+        const swiper = new Swiper('.swiper', {
+          slidesPerView: 'auto',
+          spaceBetween: 15,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          initialSlide: 0,
+          centeredSlides: false,
+          grabCursor: true
+        });
+      }
+    }
+  });
+</script> 

@@ -5,9 +5,11 @@
   gap: 3vh;
   margin-top: 5vh;
 }
-.container-finance:nth-child(2){
-    margin-left: 40;
+
+.container-finance:nth-child(2) {
+  margin-left: 40;
 }
+
 .container-finance__item {
   background-color: rgba(145, 145, 145, 0.1);
   display: flex;
@@ -29,4 +31,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-finance{
+    margin-left: 0 !important;
+    width: 80vw !important;
+  }
+  .container-finance__item{
+    width: 100% !important;
+  }
 }

@@ -15,8 +15,8 @@
   margin-left: 10vw;
 }
 
-.events__header{
-    margin-left: 10vw;
+.events__header {
+  margin-left: 10vw;
 }
 
 .events__slider {
@@ -63,4 +63,11 @@
 .events_item__description > h3,
 .events_item__description > p {
   color: var(--main-color-white);
+}
+
+@media screen and (max-width: 1000px) {
+  .events {
+    max-height: 100vh;
+    overflow: hidden;
+  }
 }

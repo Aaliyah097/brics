@@ -19,7 +19,7 @@ from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 from auth2.urls import urlpatterns as auth2_urlpatterns
 from organizations.urls import urlpatterns as org_urlpatterns
-from web.urls import urlpattersn as web_urlspatterns
+from web.urls import urlpatterns as web_urlspatterns
 
 
 urlpatterns = [

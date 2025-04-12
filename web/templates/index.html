@@ -1,36 +1,32 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Новости консорциума</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/marqueesStyle.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/finItem.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/mainPage.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/events.css' %}">
+  <meta charset="UTF-8" />
+  <title>Консорциум</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/marqueesStyle.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/finItem.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/mainPage.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/events.css' %}">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">   
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">   
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="{% static 'js/index.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{% static 'js/index.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  </head>
+</head>
   <body>
     <main>
-      <section class="main-page">
-      {% include "components/main-page.html" %}
-    </section>
-    
-      <section class="news_concept black-block">
-        
+      {% include "components/navbar.html" %}
+
+      <section class="news_concept black-block" id="next-section">
         <div class="news_concept__container">
           <div class="news_concept__plus"></div>
           <div class="news_concept__plus"></div>
@@ -133,28 +129,26 @@
                 </div>
               </div>
               {% include "components/fin-item.html" %}
-
             </div>
             <div class="team_brics__column">
-            <div class="team_brics__block2">
-              <div class="team_brics__finance_strange">
-                <p>
-                  Нефинансовые <br />
-                  преимущества
-                </p>
-                <button class="button-circle">
-                  <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
-                </button>
+              <div class="team_brics__block2">
+                <div class="team_brics__finance_strange">
+                  <p>
+                    Нефинансовые <br />
+                    преимущества
+                  </p>
+                  <button class="button-circle">
+                    <img src="{% static 'assets/arrow.svg' %}" alt="Arrow" />
+                  </button>
+                </div>
               </div>
+              {% include "components/notfin-item.html" %}
             </div>
-            {% include "components/notfin-item.html" %}
-          </div>
           </div>
         </div>
       </section>
 
-
-      <section class="events white-block">
+      <section class="events white-block" >
         <section class="partners_brics black-block">
           {% include "components/marquees.html" %}
         </section>
@@ -233,75 +227,7 @@
         </div>
       </section>
 
-      <section class="footer-wrapper black-block">
-        <footer class="footer">
-          <div class="footer_logo">
-            <img src="{% static 'assets/logo.png' %}" alt="" />
-          </div>
-          <div class="footer_menu">
-            <p>Меню</p>
-            <div class="footer_menu__content">
-              <a href="">О нас</a>
-              <a href="">Кластеры</a>
-              <a href="">Проекты</a>
-              <a href="">Медиа и новости</a>
-              <a href="">Бизнес хаб МКБ</a>
-
-              <div class="social_network">
-                <img src="{% static 'assets/youtube.svg' %}" alt="youtube">
-                <img src="{% static 'assets/nelzagram.png' %}" alt="nelzagram">
-              </div>
-            </div>
-          </div>
-          <div class="footer_section">
-            <p>Раздел</p>
-            <div class="footer_section__content">
-              <a href="">Страница</a>
-              <a href="">Страница</a>
-              <a href="">Страница</a>
-              <a href="">Страница</a>
-              <a href="">Страница</a>
-              <a href="">Страница</a>
-              <a href="">Страница</a>
-              <a href="">Страница</a>
-              <a href="">Страница</a>
-
-            </div>
-          </div>
-          <div class="footer_contacts">
-            <p>Контакты</p>
-            <div class="footer_contacts__content">
-              <p>ТЕЛЕФОН</p>
-              <a href="" type="tel">+7 (999) 999-99-99</a><a href="">
-                <p>EMAIL</p>
-              <a href="">mail@nail.com</a>
-              <p>Адрес</p>
-              <a href="">г. Москва, ул.Улица, 17</a>
-
-              <div class="footer_contacts__input_block">
-                <label class="subscribe-label">
-                  Подпишитесь на новости<br>
-                  <div class="subscribe-wrapper">
-                    <input
-                      type="email"
-                      placeholder="Введите свою почту"
-                      class="subscribe-input"
-                    />
-                  </div>
-                </label>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <img
-        src="{% static 'assets/arrow_button_down.png' %}"
-        alt="arrow_button_up"
-        class="footer__btn_up"
-        id="arrow_button_up"
-      />
-      </section>
+      {% include "components/footer.html" %}
     </main>
-
   </body>
-
 </html>

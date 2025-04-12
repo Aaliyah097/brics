@@ -1,0 +1,69 @@
+{% load static %}
+<header class="command_nav">
+    <a href="{% url 'main' %}">
+        <img
+        src="{% static 'assets/logo.svg' %}"
+        class="main-page__logo"
+        alt="Logo"
+  
+      />
+    </a>
+ 
+
+    <div class="main-page__content">
+      <ul class="main-page__list">
+        <li class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">
+          <a href="{% url 'about' %}">О МКБ</a>
+        </li>
+        <li class="{% if request.resolver_match.url_name == 'structure' %}active{% endif %}">
+          <a href="{% url 'structure' %}">Структура</a>
+        </li>
+        <li class="{% if request.resolver_match.url_name == 'representatives' %}active{% endif %}">
+          <a href="{% url 'representatives' %}">Представительства</a>
+        </li>
+        <li class="{% if request.resolver_match.url_name == 'partners' %}active{% endif %}">
+          <a href="{% url 'partners' %}">Партнеры</a>
+        </li>
+        <li class="{% if request.resolver_match.url_name == 'preferences' %}active{% endif %}">
+          <a href="{% url 'preferences' %}">Преференции членов</a>
+        </li>
+        <li class="{% if request.resolver_match.url_name == 'news' %}active{% endif %}">
+          <a href="{% url 'news' %}">Новости</a>
+        </li>
+        <li class="{% if request.resolver_match.url_name == 'events' %}active{% endif %}">
+          <a href="{% url 'events' %}">Мероприятия</a>
+        </li>
+        <li onclick="window.scrollTo(0, document.body.scrollHeight);">Контакты</li>
+      </ul>
+
+
+    </div>
+
+    <div class="main-page__btn-group">
+      <div class="main-page__btn-group__left">
+        <button class="button fill-blue">Вступить в МКБ</button>
+        <button class="button fill-transparent">Стать партнером</button>
+  
+        <button class="fill-white">
+          <img src="{% static 'assets/search.svg' %}" alt="" />
+        </button>
+      </div>
+    
+    </div>
+  </header>
+
+  <header class="mobile">
+    <img
+      src="{% static 'assets/logo.svg' %}"
+      class="main-page__logo_mobile"
+      alt="Logo"
+    />
+
+    <div class="main-page__content_mobile">
+      <img
+      src="{% static 'assets/alt-right.svg' %}"
+      class="main-page__logo_mobile"
+      alt="Hamburger"
+    />
+  </header>
+</nav>

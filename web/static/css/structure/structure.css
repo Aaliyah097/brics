@@ -1,0 +1,36 @@
+.brics-structure-page {
+  width: 83%;
+  margin: 0 auto 15vh;
+
+  h1 {
+    text-align: left;
+    color: var(--main-color-white);
+  }
+
+  p {
+    color: var(--main-color-white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .structure-block {
+    margin-bottom: 40px;
+
+    .structure-description {
+      padding: 25px;
+      border: 2px solid var(--main-color-white);
+      border-radius: 20px;
+      color: var(--main-color-white);
+      font-weight: 300;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  .page-number {
+    text-align: right;
+    color: var(--main-color-white);
+    font-weight: bold;
+    margin-top: 60px;
+  }
+}

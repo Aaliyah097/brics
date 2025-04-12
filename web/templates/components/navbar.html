@@ -1,0 +1,47 @@
+{% load static %}
+<section class="main-page">
+  {% include "components/nav.html" %}
+
+  <div class="main-page__map_mobile">
+    <h1>Объединяя бизнес</h1>
+    <p>компетенции стран БРИКС для создания новых возможностей</p>
+    <img
+      src="{% static 'assets/map_mobile.svg' %}"
+      alt="Map"
+      class="main-page__image_mobile"
+    />
+  </div>
+
+  <div class="main-page__footer_mobile">
+    <img
+      src="{% static 'assets/arrow_button_down.png' %}"
+      alt="arrow_button_down"
+      class="main-page__btn_down_mobile"
+      id="arrow_button_down"
+      onclick="document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });"
+    />
+  </div>
+
+
+  
+
+  <div class="main-page__map">
+    <h1>Объединяя бизнес</h1>
+    <p>компетенции стран БРИКС для создания новых возможностей</p>
+    <img
+      src="{% static 'assets/map.svg' %}"
+      alt="Map"
+      class="main-page__image"
+    />
+  </div>
+
+  <div class="main-page__footer">
+    <img
+      src="{% static 'assets/arrow_button_down.png' %}"
+      alt="arrow_button_down"
+      class="main-page__btn_down"
+      id="arrow_button_down"
+      onclick="document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });"
+    />
+  </div>
+</section>

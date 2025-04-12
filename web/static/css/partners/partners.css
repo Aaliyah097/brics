@@ -1,0 +1,30 @@
+.brics-partners-page {
+  width: 83%;
+  margin: 0 auto 15vh;
+
+  
+  h1 {
+    text-align: left;
+    color: var(--main-color-white);
+    font-size: 3rem;
+  }
+
+  p {
+    color: var(--main-color-white);
+    margin-bottom: 20px;
+  }
+
+  .partner-description {
+    padding: 30px;
+    border: 2px solid var(--main-color-white);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: 300;
+
+    p {
+      color: var(--main-color-white);
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+  }
+}

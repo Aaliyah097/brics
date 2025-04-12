@@ -33,6 +33,15 @@ body {
   min-height: 100vh;
 }
 
+li,
+button,
+a,
+select,
+input,
+textarea {
+  cursor: pointer;
+}
+
 .white-block {
   position: relative;
   background-color: var(--main-color-white);
@@ -754,4 +763,17 @@ section {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+.white-button {
+  border-radius: 50px;
+  margin: 3vh 0 15vh;
+  padding: 1% 5%;
+  border: none;
+  background-color: var(--main-color-white);
+  color: var(--main-color-black);
+}
+
+.white-button:hover {
+  background-color: rgb(236, 236, 236);
 }

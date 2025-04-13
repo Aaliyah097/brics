@@ -5,3 +5,4 @@ redis_data
 __pycache__
 pg_data
 /static
+.env

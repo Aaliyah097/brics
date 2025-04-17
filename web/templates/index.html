@@ -16,6 +16,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
+  <script src="{% static 'js/news.js' %}"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="{% static 'js/index.js' %}"></script>
@@ -26,7 +27,7 @@
     <main>
       {% include "components/navbar.html" %}
 
-      <section class="news_concept black-block" id="next-section">
+      <section class="news_concept black-block" id="next-section" >
         <div class="news_concept__container">
           <div class="news_concept__plus"></div>
           <div class="news_concept__plus"></div>
@@ -40,65 +41,61 @@
           </div>
 
           <div class="news_concept__content">
-            <div class="news_concept__item">
-              <span class="category">Авиация</span>
+            <div class="news_concept__item" onclick="openNews(1)">
+              <span class="category">Новости</span>
               <p class="description">
-                Новые <br />
-                возможности
+                Мир БРИКС: Инвестиции и Налоги для Бизнеса
               </p>
-              <time datetime="2025-01-30">30.01.2025</time>
+              <time datetime="2025-03-26">26.03.2025</time>
               <p class="text">
-                БРИКС объявил о создании нового финансового механизма для
-                поддержки зеленой экономики
+                26 марта в московском отеле «The Ritz-Carlton» успешно прошёл форум
+                «Мир БРИКС: Инвестиции и Налоги для Бизнеса»
               </p>
             </div>
 
-            <div class="news_concept__item special">
-              <span class="category">Авиация</span>
+            <div class="news_concept__item special" onclick="openNews(2)">
+              <span class="category">Новости</span>
               <div class="news_concept__wrapper">
                 <p class="description-invert">
-                  Новые <br />
-                  возможности
+                  Успешный бизнес в России и за рубежом 2025
                 </p>
-                <time datetime="2025-01-30">30.01.2025</time>
+                <time datetime="2025-01-30">12.03.2025</time>
 
                 <p class="text-invert">
-                  БРИКС объявил о создании нового финансового механизма для
-                  поддержки зеленой экономики
+                  Международная конференция «Успешный бизнес в России и за рубежом
+                  2025»: итоги, цели и планы на будущее
                 </p>
               </div>
             </div>
 
-            <div class="news_concept__item">
-              <span class="category">Авиация</span>
+            <div class="news_concept__item" onclick="openNews(3)">
+              <span class="category">Новости</span>
               <p class="description">
-                Новые <br />
-                возможности
+                Мир БРИКС: Инвестиции и Налоги для Бизнеса
               </p>
-              <time datetime="2025-01-30">30.01.2025</time>
+              <time datetime="2025-03-26">26.03.2025</time>
               <p class="text">
-                БРИКС объявил о создании нового финансового механизма для
-                поддержки зеленой экономики
+                26 марта в московском отеле «The Ritz-Carlton» успешно прошёл форум
+                «Мир БРИКС: Инвестиции и Налоги для Бизнеса»
               </p>
             </div>
 
-            <div class="news_concept__item">
-              <span class="category">Авиация</span>
+            <div class="news_concept__item" onclick="openNews(1)">
+              <span class="category">Новости</span>
               <p class="description">
-                Новые <br />
-                возможности
+                Мир БРИКС: Инвестиции и Налоги для Бизнеса
               </p>
-              <time datetime="2025-01-30">30.01.2025</time>
+              <time datetime="2025-03-26">26.03.2025</time>
               <p class="text">
-                БРИКС объявил о создании нового финансового механизма для
-                поддержки зеленой экономики
+                26 марта в московском отеле «The Ritz-Carlton» успешно прошёл форум
+                «Мир БРИКС: Инвестиции и Налоги для Бизнеса»
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="team_brics white-block">
+      <section class="team_brics white-block" id="advantage">
         <div class="team_brics__container">
           <div class="team_brics__plus"></div>
           <div class="team_brics__plus"></div>
@@ -148,14 +145,14 @@
         </div>
       </section>
 
-      <section class="events white-block" >
+      <section class="events white-block" id="event">
         <section class="partners_brics black-block">
           {% include "components/marquees.html" %}
         </section>
         {% include "components/events.html" %}
       </section>
 
-      <section class="consortium_partners white-block">
+      <!-- <section class="consortium_partners white-block">
         <div class="consortium_partners__container">
           <div class="consortium_partners__plus"></div>
           <div class="consortium_partners__plus"></div>
@@ -194,9 +191,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="partner-section-wrapper white-block">
+      <section class="partner-section-wrapper white-block" id="become-partner">
         <div class="partner-section">
           <div class="ellipse ellipse-left"></div>
           <div class="ellipse ellipse-top"></div>

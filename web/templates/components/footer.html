@@ -7,11 +7,13 @@
       <div class="footer_menu">
         <p>Меню</p>
         <div class="footer_menu__content">
-          <a href="">О нас</a>
-          <a href="">Кластеры</a>
-          <a href="">Проекты</a>
-          <a href="">Медиа и новости</a>
-          <a href="">Бизнес хаб МКБ</a>
+          <a href="{% url 'about' %}">О МКБ</a>
+          <a href="{% url 'structure' %}"">Структура</a>
+          <a href="{% url 'representatives' %}">Представительства</a>
+          <a href="{% url 'partners' %}">Партнеры</a>
+          <a href="{% url 'preferences' %}">Преференции членов</a>
+          <a href="{% url 'news' %}">Новости</a>
+          <a href="{% url 'events' %}">Мероприятия</a>
 
           <div class="social_network">
             <img src="{% static 'assets/youtube.svg' %}" alt="youtube" style="width: 45px; height: 45px;">
@@ -25,15 +27,10 @@
       <div class="footer_section">
         <p>Раздел</p>
         <div class="footer_section__content">
-          <a href="">Страница</a>
-          <a href="">Страница</a>
-          <a href="">Страница</a>
-          <a href="">Страница</a>
-          <a href="">Страница</a>
-          <a href="">Страница</a>
-          <a href="">Страница</a>
-          <a href="">Страница</a>
-          <a href="">Страница</a>
+          <a href="{% url 'main' %}#next-section">Новости</a>
+          <a href="{% url 'main' %}#advantage">Преимущества</a>
+          <a href="{% url 'main' %}#event">Мероприятия</a>
+          <a href="{% url 'main' %}#become-partner">Стать партнером</a>
 
         </div>
       </div>
@@ -43,7 +40,7 @@
           <p>ТЕЛЕФОН</p>
           <a href="" type="tel">+7 (999) 999-99-99</a><a href="">
             <p>EMAIL</p>
-          <a href="">mail@nail.com</a>
+          <a href="mailto:info@icbrics.com">info@icbrics.com</a>
           <p>Адрес</p>
           <a href="">г. Москва, ул.Улица, 17</a>
 

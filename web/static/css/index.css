@@ -278,6 +278,12 @@ section {
   display: flex;
   flex-direction: column;
   padding: 2% 2% 3% 2%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.news_concept__item:hover {
+  transform: translateY(-5px);
 }
 
 .news_concept__item .category {
@@ -288,14 +294,14 @@ section {
 }
 
 .news_concept__item .description {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 300;
   margin: 0.5rem 0;
   color: var(--main-dark-grey);
 }
 
 .news_concept__item .description-invert {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 300;
   margin: 0.5rem 0;
   color: var(--main-color-white);
